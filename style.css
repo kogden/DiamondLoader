@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+	background-color:#232323;
+	background-image:url("https://static.pexels.com/photos/129922/pexels-photo-129922.jpeg");
+	background-size:cover;
+}
+
+.container {
+	width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+	animation:spin 2s cubic-bezier(.25,.1,.25,1) infinite;
+
+}
+
+.elem {
+	width: 63px;
+  height: 63px;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 10px;
+	background-color:white;
+	top:5px;
+	position:relative;
+}
+
+#cube1 {
+	animation: shiftup 2s cubic-bezier(.25,.1,.25,1) infinite;
+	background: #e2e2e2;
+background: -moz-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #e2e2e2), color-stop(30%, #d1d1d1), color-stop(62%, #dbdbdb), color-stop(100%, #fefefe));
+background: -webkit-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: -o-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: -ms-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: linear-gradient(to right, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+}
+
+#cube2 {
+	animation: shiftdown 2s cubic-bezier(.25,.1,.25,1) infinite;
+	background: #b3dced;
+background: -moz-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #b3dced), color-stop(50%, #29b8e5), color-stop(100%, #bce0ee));
+background: -webkit-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: -o-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: -ms-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: linear-gradient(to right, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+}
+
+#cube3 {
+	animation: shiftup 2s cubic-bezier(.25,.1,.25,1) infinite;
+	background: #b3dced;
+background: -moz-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #b3dced), color-stop(50%, #29b8e5), color-stop(100%, #bce0ee));
+background: -webkit-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: -o-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: -ms-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+background: linear-gradient(to right, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+}
+
+#cube4 {
+	animation: shiftdown 2s cubic-bezier(.25,.1,.25,1) infinite;
+	background: #e2e2e2;
+background: -moz-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #e2e2e2), color-stop(30%, #d1d1d1), color-stop(62%, #dbdbdb), color-stop(100%, #fefefe));
+background: -webkit-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: -o-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: -ms-linear-gradient(left, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+background: linear-gradient(to right, #e2e2e2 0%, #d1d1d1 30%, #dbdbdb 62%, #fefefe 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+}
+
+@keyframes shiftdown {
+	0% {
+		top:5px;
+	}
+	15% {
+		top:5px;
+	}
+	30% {
+		top:37px;
+	}
+	70% {
+		top:37px;
+	}
+	85% {
+		top:5px;
+	}
+	100% {
+		top:5px;
+	}
+}
+
+@keyframes shiftup {
+	0% {
+		top:5px;
+	}
+	15% {
+		top:5px;
+	}
+	30% {
+		top:-32px;
+	}
+	70% {
+		top:-32px;
+	}
+	85% {
+		top:5px;
+	}
+	100% {
+		top:5px;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform:rotate(45deg);
+	}
+	40% {
+		transform:rotate(45deg);
+	}
+	
+	68% {
+		transform:rotate(405deg);
+	}
+	100% {
+		transform:rotate(405deg);
+	}
+}
+
+a {
+	color:#cccccc;
+	opacity:0.7;
+	float:right;
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+
